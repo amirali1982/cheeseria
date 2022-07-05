@@ -33,7 +33,7 @@ public class CheeseriaController {
     }
 
     @GetMapping
-    public List<Cheese> getCheese() {
+    public List<Cheese> getCheeseList() {
         return cheeseRepository.findAll();
     }
 
