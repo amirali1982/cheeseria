@@ -24,6 +24,7 @@ With some React 18+ syntax we need to use React Router 6+ otherwise there may be
 
 ### Future Improvements
 
+- Show estimated costs per items. Currently, I'm showing the total estimated costs demonstrate my knowledge.
 - Upgrade React Router to 6+
 - Add multiple image support. (Architectural change)
 - UI Improvements to make it more modern.
