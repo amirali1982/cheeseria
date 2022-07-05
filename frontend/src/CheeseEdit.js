@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
+import {Button, Container, Form, FormGroup, Input, Label} from 'reactstrap';
 import AppNavbar from './AppNavbar';
 
 class CheeseEdit extends Component {
@@ -14,7 +14,8 @@ class CheeseEdit extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            item: this.emptyItem
+            item: this.emptyItem,
+            selectedFiles: ''
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,20 +34,22 @@ class CheeseEdit extends Component {
         const name = target.name;
         let item = {...this.state.item};
         item[name] = value;
-        this.setState({item});
+        this.setState({item, selectedFiles: event.target.files});
     }
 
     async handleSubmit(event) {
         event.preventDefault();
+        let formData = new FormData();
         const {item} = this.state;
+        const {selectedFiles} = this.state;
+        formData.append('cheese', JSON.stringify(item));
+        if (selectedFiles && selectedFiles.length > 0) {
+            formData.append('file', selectedFiles[0]);
+        }
 
         await fetch('/cheeseria' + (item.id ? '/' + item.id : ''), {
             method: (item.id) ? 'PUT' : 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(item),
+            body: formData,
         });
         this.props.history.push('/cheeseria');
     }
@@ -75,6 +78,11 @@ class CheeseEdit extends Component {
                         <Input type="text" name="price" id="price" value={item.price || ''}
                                onChange={this.handleChange} autoComplete="price"/>
                     </FormGroup>
+                    <br/>
+                    <Label for="image">Image</Label>&nbsp;
+                    <input type="file" name="file" id="file" onChange={this.handleChange}/>
+                    <br/>
+                    <br/>
                     <FormGroup>
                         <Button color="primary" type="submit">Save</Button>{' '}
                         <Button color="secondary" tag={Link} to="/cheeseria">Cancel</Button>
@@ -84,4 +92,5 @@ class CheeseEdit extends Component {
         </div>
     }
 }
+
 export default CheeseEdit;

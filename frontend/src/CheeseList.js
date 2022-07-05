@@ -39,6 +39,7 @@ class CheeseList extends Component {
 
         const cheeseList = cheeseria.map(cheese => {
             return <tr key={cheese.id}>
+                <td><img src={`data:image/jpeg;base64,${cheese.image}`} alt={cheese.name}/></td>
                 <td style={{whiteSpace: 'nowrap'}}>{cheese.name}</td>
                 <td>{cheese.color}</td>
                 <td>{cheese.price}</td>
@@ -60,10 +61,11 @@ class CheeseList extends Component {
                     <Table className="mt-4">
                         <thead>
                         <tr>
+                            <th width="40%">Image</th>
                             <th width="30%">Name</th>
-                            <th width="30%">Color</th>
-                            <th width="30%">Price</th>
-                            <th width="40%">Actions</th>
+                            <th width="10%">Color</th>
+                            <th width="10%">Price</th>
+                            <th width="10%">Actions</th>
                         </tr>
                         </thead>
                         <tbody>

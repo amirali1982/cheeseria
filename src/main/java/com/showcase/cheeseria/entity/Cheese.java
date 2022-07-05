@@ -3,6 +3,7 @@ package com.showcase.cheeseria.entity;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -20,5 +21,8 @@ public class Cheese {
     private String name;
     private String price;
     private String color;
+
+    @Column(length = 100000)
+    private byte[] image;
 
 }
