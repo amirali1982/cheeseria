@@ -12,13 +12,19 @@
 				"method": "POST",
 				"header": [],
 				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Cheese 1\",\r\n    \"color\": \"Red\",\r\n    \"price\": \"10.05\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cheese",
+							"value": "{\n    \"name\": \"Cheese 2\",\n    \"color\": \"Red\",\n    \"price\": \"10.15\"\n}",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/amir.ali/Downloads/caerphilly.jpg"
 						}
-					}
+					]
 				},
 				"url": {
 					"raw": "http://localhost:8080/cheeseria",
@@ -29,6 +35,18 @@
 					"port": "8080",
 					"path": [
 						"cheeseria"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
 					]
 				}
 			},
@@ -109,6 +127,26 @@
 					"port": "8080",
 					"path": [
 						"cheeseria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Setup Cheeseria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cheeseria/reset-cheeseria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cheeseria",
+						"reset-cheeseria"
 					]
 				}
 			},

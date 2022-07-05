@@ -76,7 +76,7 @@ class CheeseList extends Component {
                 <AppNavbar/>
                 <Container fluid>
                     <br/>
-                    <h2>Cheeseria</h2>
+                    <h2>Cheeseria</h2><EstimatedCosts value={this.state.totalEstimatedCost}/>
                     <Table className="mt-4">
                         <thead>
                         <tr>
