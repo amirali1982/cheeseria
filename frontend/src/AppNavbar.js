@@ -17,9 +17,9 @@ export default class AppNavbar extends Component {
 
     render() {
         return <Navbar color="dark" dark expand="md">
-            <NavbarBrand tag={Link} to="/cheeseria">Home</NavbarBrand>
+            <NavbarBrand tag={Link} to="/cheeseria-ui">Home</NavbarBrand>
             <div className="float-right">
-                <Button color="success" tag={Link} to="/cheeseria/new">Add Cheese</Button>
+                <Button color="success" tag={Link} to="/cheeseria-ui/new">Add Cheese</Button>
             </div>
         </Navbar>;
     }

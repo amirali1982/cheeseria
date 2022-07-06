@@ -51,7 +51,7 @@ class CheeseEdit extends Component {
             method: (item.id) ? 'PUT' : 'POST',
             body: formData,
         });
-        this.props.history.push('/cheeseria');
+        this.props.history.push('/cheeseria-ui');
     }
 
     render() {
@@ -85,7 +85,7 @@ class CheeseEdit extends Component {
                     <br/>
                     <FormGroup>
                         <Button color="primary" type="submit">Save</Button>{' '}
-                        <Button color="secondary" tag={Link} to="/cheeseria">Cancel</Button>
+                        <Button color="secondary" tag={Link} to="/cheeseria-ui">Cancel</Button>
                     </FormGroup>
                 </Form>
             </Container>

@@ -64,7 +64,7 @@ class CheeseList extends Component {
                 </td>
                 <td>
                     <ButtonGroup>
-                        <Button size="sm" color="primary" tag={Link} to={"/cheeseria/" + cheese.id}>Edit</Button>
+                        <Button size="sm" color="primary" tag={Link} to={"/cheeseria-ui/" + cheese.id}>Edit</Button>
                         <Button size="sm" color="danger" onClick={() => this.remove(cheese.id)}>Delete</Button>
                     </ButtonGroup>
                 </td>

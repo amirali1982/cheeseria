@@ -9,8 +9,8 @@ class App extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route exact path='/cheeseria/' component={CheeseList}/>
-                    <Route exact path='/cheeseria/:id' component={CheeseEdit}/>
+                    <Route exact path='/cheeseria-ui/' component={CheeseList}/>
+                    <Route exact path='/cheeseria-ui/:id' component={CheeseEdit}/>
                 </Switch>
             </Router>
         )

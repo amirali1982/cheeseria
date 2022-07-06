@@ -7,21 +7,27 @@
 - H2DB
 - JUnit Integration with H2DB. There is not enough business logic in the spring boot app so no unit tests at the moment.
 
-### Start Service
-`gradlew bootRun`
+### Creating Images and Running the project using Docker
 
-### Start UI
-`frontend/npm start`
+Creating docker image for the backend and frontend
+
+1. In your terminal, change your directory to the project root.
+2. From the project root, run the following command to generate docker image for the frontend: `docker build -t cheeseria:frontend ./frontend`
+3. From the project root, run the following command to generate the docker image for the backend: `docker build -t cheeseria:backend .`
+4. From the project root, run both frontend and backend using: `docker compose up`
+5. If you encounter any errors or networking issues in docker then use `docker compose down` or restart the docker. That will most probably solve those kinds of intermittent issues.
 
 #### Cheeseria UI:
-http://localhost:3000/cheeseria
+
+Access the Cheeseria UI at: http://localhost:3000/cheeseria-ui
 
 ### Setup / Reset Initial Cheeseria Data
-http://localhost:8080/cheeseria/reset-cheeseria
+
+Fill-in or reset the data by accessing: http://localhost:8080/cheeseria/reset-cheeseria
 
 #### Postman Collection: 
 
-Find the postman collection in <root>/postman directory.
+Find the postman collection in <root>/postman directory if you like to use postman to access the backend api.
 
 #### OpenApi / Swagger:
 
@@ -43,6 +49,7 @@ Swagger Doc: http://localhost:8080/swagger-ui/index.html
 - Add Cheese Image comparison in Integration Tests.
 - For the UI, I'm currently using Snapshot testing using Jest, but in the future, for more advanced scenarios, we can also add Dom Testings and Custom Transformers.
 - Add and use Lombok builders.
+- Some may argue, keeping backend and frontend isn't a good practice. Its currently a small demo project. If it becomes bigger than it's a good idea to lose couple it and have their own repositories.
 - Upgrade React Router to 6+
 - Map/Redirect localhost:8080/ to localhost:8080/cheeseria
 - Add multiple image support. (Architectural change)
