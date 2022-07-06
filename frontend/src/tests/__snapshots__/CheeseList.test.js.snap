@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Cheese List 1`] = `
+<div>
+  <nav
+    className="navbar navbar-expand-md navbar-dark bg-dark"
+  >
+    <a
+      className="navbar-brand"
+      href="/cheeseria-ui"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <div
+      className="float-right"
+    >
+      <a
+        aria-label={null}
+        className="btn btn-success"
+        href="/cheeseria-ui/new"
+        onClick={[Function]}
+      >
+        Add Cheese
+      </a>
+    </div>
+  </nav>
+  <div
+    className="container-fluid"
+  >
+    <br />
+    <h2>
+      Cheeseria
+    </h2>
+    <div>
+      <h4>
+        Estimated Cost: 
+        0
+      </h4>
+    </div>
+    <table
+      className="mt-4 table"
+    >
+      <thead>
+        <tr>
+          <th
+            width="20%"
+          >
+            Image
+          </th>
+          <th
+            width="20%"
+          >
+            Name
+          </th>
+          <th
+            width="10%"
+          >
+            Color
+          </th>
+          <th
+            width="10%"
+          >
+            Price/kg
+          </th>
+          <th
+            width="10%"
+          >
+            Req. Weight
+          </th>
+          <th
+            width="10%"
+          >
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+    <div>
+      <h4>
+        Estimated Cost: 
+        0
+      </h4>
+    </div>
+  </div>
+</div>
+`;

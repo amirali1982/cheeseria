@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Cheese Edit 1`] = `
+<div>
+  <nav
+    className="navbar navbar-expand-md navbar-dark bg-dark"
+  >
+    <a
+      className="navbar-brand"
+      href="/cheeseria-ui"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <div
+      className="float-right"
+    >
+      <a
+        aria-label={null}
+        className="btn btn-success"
+        href="/cheeseria-ui/new"
+        onClick={[Function]}
+      >
+        Add Cheese
+      </a>
+    </div>
+  </nav>
+  <div
+    className="container"
+  >
+    <h2>
+      Add Cheese
+    </h2>
+    <form
+      className=""
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          className=""
+          htmlFor="name"
+        >
+          Name
+        </label>
+        <input
+          autoComplete="name"
+          className="form-control"
+          id="name"
+          name="name"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          className=""
+          htmlFor="color"
+        >
+          Color
+        </label>
+        <input
+          autoComplete="color"
+          className="form-control"
+          id="color"
+          name="color"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          className=""
+          htmlFor="price"
+        >
+          Price
+        </label>
+        <input
+          autoComplete="price"
+          className="form-control"
+          id="price"
+          name="price"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <br />
+      <label
+        className=""
+        htmlFor="image"
+      >
+        Image
+      </label>
+       
+      <input
+        id="file"
+        name="file"
+        onChange={[Function]}
+        type="file"
+      />
+      <br />
+      <br />
+      <div
+        className="form-group"
+      >
+        <button
+          aria-label={null}
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="submit"
+        >
+          Save
+        </button>
+         
+        <a
+          aria-label={null}
+          className="btn btn-secondary"
+          href="/cheeseria-ui"
+          onClick={[Function]}
+        >
+          Cancel
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+`;
