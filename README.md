@@ -17,6 +17,7 @@ Creating docker image for the backend and frontend
 3. From the project root, run the following command to generate the docker image for the backend: `docker build -t cheeseria:backend .`
 4. From the project root, run both frontend and backend using: `docker compose up`
 5. If you encounter any errors or networking issues in docker then use `docker compose down` or restart the docker. That will most probably solve those kinds of intermittent issues.
+6. If there are any issues in building the image then try with `--no-cache` option.
 
 #### Cheeseria UI:
 
