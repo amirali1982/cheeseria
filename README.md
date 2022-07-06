@@ -5,7 +5,8 @@
 - React
 - OpenApi / Swagger
 - H2DB
-- JUnit Integration with H2DB. There is not enough business logic in the spring boot app so no unit tests at the moment.
+- JUnit Integration with H2DB.
+- Jest Unit Tests for React
 
 ### Creating Images and Running the project using Docker
 
