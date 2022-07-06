@@ -45,14 +45,13 @@ Swagger Doc: http://localhost:8080/swagger-ui/index.html
 ### Future Improvements
 
 - Set Cheeseria with an external DB like mysql or postgres instead of in-memory H2 DB for persistence.
-- Show estimated costs per items. Currently, I'm showing the total estimated costs demonstrate my knowledge.
+- Show estimated costs per items. Currently, I'm showing the total estimated costs to demonstrate my knowledge.
 - Improve initial data setup process.
 - Add Cheese Image comparison in Integration Tests.
 - For the UI, I'm currently using Snapshot testing using Jest, but in the future, for more advanced scenarios, we can also add Dom Testings and Custom Transformers.
 - Add and use Lombok builders.
-- Some may argue, keeping backend and frontend isn't a good practice. Its currently a small demo project. If it becomes bigger than it's a good idea to lose couple it and have their own repositories.
+- Some may argue, keeping backend and frontend together in one repository isn't a good practice. It's currently a small demo project. If it becomes bigger than it's a good idea to decouple it and have their own repositories.
 - Upgrade React Router to 6+
-- Map/Redirect localhost:8080/ to localhost:8080/cheeseria
 - Add multiple image support. (Architectural change)
 - UI Improvements to make it more modern.
 - SEO Optimize the Cheeseria
