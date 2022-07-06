@@ -49,6 +49,7 @@ Swagger Doc: http://localhost:8080/swagger-ui/index.html
 - Improve initial data setup process.
 - Add Cheese Image comparison in Integration Tests.
 - For the UI, I'm currently using Snapshot testing using Jest, but in the future, for more advanced scenarios, we can also add Dom Testings and Custom Transformers.
+- We also need to write tests for price calculation functionalities.
 - Add and use Lombok builders.
 - Some may argue, keeping backend and frontend together in one repository isn't a good practice. It's currently a small demo project. If it becomes bigger than it's a good idea to decouple it and have their own repositories.
 - Upgrade React Router to 6+
