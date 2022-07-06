@@ -41,6 +41,7 @@ Swagger Doc: http://localhost:8080/swagger-ui/index.html
 - Show estimated costs per items. Currently, I'm showing the total estimated costs demonstrate my knowledge.
 - Improve initial data setup process.
 - Add Cheese Image comparison in Integration Tests.
+- For the UI, I'm currently using Snapshot testing using Jest, but in the future, for more advanced scenarios, we can also add Dom Testings and Custom Transformers.
 - Add and use Lombok builders.
 - Upgrade React Router to 6+
 - Map/Redirect localhost:8080/ to localhost:8080/cheeseria
